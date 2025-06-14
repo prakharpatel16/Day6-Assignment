@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Fest Registration Form</title>
+</head>
+<body>
+
+  <h2>Tech Fest Registration Form</h2>
+
+  <form>
+      <legend>Fill Your Details</legend>
+      <br/>
+      <label>
+        Name:
+        <input type="text" name="name" placeholder="Your full name" required />
+      </label>
+      <br/><br/>
+
+      <label>
+        Contact Number:
+        <input type="tel" name="phone" placeholder="10-digit number" pattern="[0-9]{10}" required />
+      </label>
+      <br/><br/>
+
+      <label>
+        Email:
+        <input type="email" name="email" placeholder="example@mail.com" required />
+      </label>
+      <br/><br/>
+
+
+      <label>
+        Course:
+        <select name="course" required>
+          <option value="" disabled selected>Select your course</option>
+          <option value="btech">B.Tech</option>
+          <option value="bca">BCA</option>
+          <option value="it">I.T.</option>
+        </select>
+      </label>
+      <br/><br/>
+
+      
+      <label>Year of Study:</label><br />
+      <select name="Year of Course">
+        <option value="First Year">First Year</option>
+        <option value="Second Year">Second Year</option>
+        <option value="Third Year">Third Year</option>
+        <option value="Forth Year">Forth Year</option>
+      </select>
+      <br/><br/>
+
+
+      <label>Participating Tech Fest Events:</label><br />
+      <input type="checkbox" name="events" value="coding" /> Coding<br>
+
+      <input type="checkbox" name="events" value="webdev" /> Web Development<br/>
+
+      <input type="checkbox" name="events" value="hackathon" /> Hackathon<br/>
+
+      <input type="checkbox" name="events" value="robotics" /> Robotics<br/>
+
+      <input type="checkbox" name="events" value="quiz" /> Tech Quiz
+      <br/><br/>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+
+</body>
+</html>
